@@ -1,0 +1,8 @@
+# Challenge Encriptador de Texto
+
+¡Hola! 
+Este es mi primer proyecto, un Encriptador de texto, convierte tu texto en *idioma efe*.
+Por ejemplo, si escribes **"hola"**, al presionar el botón *Encriptar* te pondrá **"hofolafa"**.
+Y también cumple la función de desencriptar ese texto.
+
+Al encriptar o desencriptar también podemos copiar el resultado del texto con el botón *copiar*
