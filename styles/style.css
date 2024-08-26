@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #F3F5FC;
+    color: #0A3871;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 40px 40px 20px 40px;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.encriptador {
+    display: flex;
+    flex: 1;
+    gap: 80px;
+    justify-content: space-between;
+    padding: 40px 40px 0;
+    height: 100vh;
+}
+
+.encriptador_contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input_sin_borde {
+    font-size: 2rem;
+    color: #0A3871;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    height: 60vh;
+    resize: none;
+    flex: 1;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-bottom: 450px;
+    text-align: center;
+}
+
+.input_sin_borde::placeholder {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: #0A3871;
+    background-color: transparent;
+}
+
+.advertencia {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+}
+
+.encriptador_contenido_texto {
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #495057;
+    position: relative;
+    padding-left: 25px;
+}
+
+.imagen_exclamacion {
+    position: relative;
+}
+
+.container_botones {
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+.container_boton_1, .container_boton_2 {
+    flex: 1;
+    padding: 24px 0;
+    border-radius: 24px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.container_boton_1 {
+    background-color: #0A3871;
+    color: white;
+    border: none;
+}
+
+.container_boton_2 {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.resultado_encriptado {
+    width: 400px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    padding: 32px;
+    background: white;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.resultado_encriptado_titulo {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #343A40;
+    text-align: center;
+    padding-top: 30px;
+    width: 336px;
+    margin-bottom: 16px;
+}
+
+.resultado_encriptado_texto {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #495057;
+    text-align: center;
+    padding-top: 30px;
+    width: 336px;
+}
+
+.boton_copiar_personalizado {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 24px;
+    background-color: transparent;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    align-self: center;
+    margin-bottom: 0;
+    width: 336px;
+    height: 67px;
+}
+
+#contenidoOriginal {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultado_texto {
+    font-size: 24px;
+    color: #0A3871;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    padding: 0;
+}
+
+#resultadoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.resultado_encriptado_texto.mostrar {
+    margin-top: 0;
+    padding-top: 60;
+    align-self: center;
+    text-align: center;
+}
+
+.imagen_resultado {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 32px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-color: #F7F9FC;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .encriptador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .encriptador_contenido {
+        width: 100%;
+        padding-top: 70px;
+    }
+
+    .input_sin_borde {
+        padding-top: 100px;
+        background-color: transparent;
+        border: none;
+        font-size: 32px;
+        padding-top: 20px;
+        padding-bottom: 650px;
+        margin-bottom: 50px;
+        text-align: left;
+    }
+
+    .container_botones {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .container_boton_1,
+    .container_boton_2 {
+        width: 40%;
+    }
+
+    .resultado_encriptado {
+        width: 95%;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 0%;
+        padding: 20px;
+        background-color: #FFFFFF;
+    }
+
+    .resultado_encriptado_titulo,
+    .resultado_encriptado_texto {
+        font-size: 18px;
+    }
+
+    .imagen_resultado {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 16px;
+    }
+    
+    header {
+        left: 10px;
+    }
+      
+    .encriptador {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 80px;
+        padding: 0;
+    }
+      
+    .input_sin_borde {
+        height: 40vh;
+        font-size: 24px;
+        margin-bottom: 100px;
+        text-align: start;
+        background-color: transparent;
+    }
+
+    .advertencia {
+        margin-top: 35%;
+    }
+      
+    .container_botones {
+        flex-direction: column;
+        gap: 16px;
+    }
+      
+    .container_boton_1, .container_boton_2 {
+        width: 100%;
+        padding: 24px 0;
+    }
+      
+    .resultado_encriptado {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 0%;
+        padding: 20px;
+        background-color: #FFFFFF;
+    }
+      
+    .imagen_resultado {
+        display: none;
+    }
+
+    .boton_copiar_personalizado {
+        width: 279px;
+        height: 67px;
+    }
+}
